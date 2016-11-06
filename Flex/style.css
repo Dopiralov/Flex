@@ -1,0 +1,88 @@
+@font-face{
+	font-family: regu;
+	src:url(font/regu.ttf)
+}
+body{
+	font-family: regu;
+	
+}
+.header{
+	height: 50px;
+	border-bottom: 2px solid #822222;
+	background: #4379B0;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 100px;
+}
+.main{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	line-height:100px;
+	text-align: center;
+	font-size: 20px;
+	background: #C6B1B1;
+	margin: 25px;
+}
+
+.flex1{
+	background: #D05959;
+	flex:1 50%;
+	order: 1;
+}
+.flex2{
+	background: #6F9D1E;
+	flex:1 50%;
+	order: 2;
+}
+.flex3{
+	background: #B174B8;
+	flex:1 50%;
+	order: 3;
+}
+.flex4{
+	background: #8A9D30;
+	flex:1 100%;
+	order: 5;
+}
+.flex5{
+	background: #D68D1A;
+	flex:1 50%;
+	order: 4;
+}
+.footer{
+	height: 50px;
+	background: #3753CA;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	border-top: 2px solid #680808;
+}
+@media all and (min-width: 720px){
+.flex1{
+	flex:1 33%;
+	order: 1;
+}
+.flex2{
+	flex:1 33%;
+	order: 2;
+}
+.flex3{
+	flex:1 33%;
+	order: 3;
+}
+.flex4{
+	flex:1 50%;
+	order: 4;
+}
+.flex5{
+	flex:1 50%;
+	order: 5;
+}
+}
+@media all and (max-width: 500px){
+	.main{
+		flex-flow: column;
+	}
+}
